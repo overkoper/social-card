@@ -1,22 +1,26 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import styled from "styled-components";
 import Text from "./Text";
 import Image from "./Image";
-import './App.scss';
 
 class App extends Component {
-  
   render() {
-    const Wrapper = styled.div`
-    background: black;
-    color: white;
-    `
+    const Root = styled.div`
+      width: 480px;
+      margin: 0 auto;
+      border: 2px solid grey;
+      border-radius: 10px;
+
+      @media only screen and (max-width: 479px;) {
+        width: 100%;
+      }
+    `;
     return (
-      <Wrapper>
+      <Root>
         <Image />
-       <Text />
-      </Wrapper>
-    )
+        <Text />
+      </Root>
+    );
   }
 }
 
