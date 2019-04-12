@@ -1,3 +1,12 @@
+button{
+  width: 100px;
+  height: 100px;
+  background: #61dafb;
+  color: #282c34;
+    &:hover{
+      background: #61dace;
+    }
+}
 .App {
   text-align: center;
 }
